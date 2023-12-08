@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppToolBar"> // used to modify UI
+        <attr name="atb_title" format="string"/>
+        <attr name="atb_visible_end_icon" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputField"> // take value from this input field
+        <attr name="if_title" format="string"/>
+        <attr name="if_hint" format="string"/>
+        <attr name="if_inputType" format="enum">
+            <enum name="text" value="0"/>
+            <enum name="singleNumber" value="1"/>
+        </attr>
+        <attr name="if_maxLength" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/loginRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_16sdp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_welcome"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_create_account"
+            android:fontFamily="@font/kanit_regular"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_18sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:hint="@string/enter_your_username"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/_11ssp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:background="@drawable/bg_username"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <com.trust.home.security.widgets.InputPassword
+            android:id="@+id/inputPassword"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignIn"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:text="@string/sign_in"
+            android:gravity="center"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/kanit_regular"
+            android:background="@drawable/bg_button" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:backgroundTint="@color/color_D9D9D9"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="@dimen/_12sdp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:src="@drawable/ic_google"
+                    android:layout_gravity="center_vertical"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_with_google"
+                    android:fontFamily="@font/kanit_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+    <com.trust.home.security.widgets.AppToolBar
+        android:id="@+id/appToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:atb_title="Register"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_16sdp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_create_account"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_18sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@drawable/bg_input_gray"
+            android:hint="@string/enter_your_email"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_11ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+        <com.trust.home.security.widgets.InputPassword
+            android:id="@+id/edtPassword"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:text="@string/create_account"
+            android:gravity="center"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/kanit_regular"
+            android:background="@drawable/bg_button" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+    </LinearLayout>
+</FrameLayout>

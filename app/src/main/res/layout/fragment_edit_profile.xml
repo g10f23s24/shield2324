@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white">
+    <com.trust.home.security.widgets.AppToolBar
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:atb_title="Edit Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imAvatar"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/ic_default_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_24sdp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_constraintTop_toBottomOf="@+id/imAvatar"
+        app:layout_constraintStart_toEndOf="@+id/imAvatar"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="-30dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:tint="@color/white"
+        android:src="@drawable/ic_edit_avatar" />
+
+    <com.trust.home.security.widgets.InputField
+        android:id="@+id/fieldName"
+        app:if_title="Name"
+        app:if_hint="Input your name"
+        app:layout_constraintTop_toBottomOf="@+id/imAvatar"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.trust.home.security.widgets.InputField
+        android:id="@+id/fieldAge"
+        app:if_title="Age"
+        app:if_hint="Input your age"
+        app:if_inputType="singleNumber"
+        app:if_maxLength="2"
+        app:layout_constraintTop_toBottomOf="@+id/fieldName"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/fieldAge"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/kanit_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/cbMale"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/cbFemale"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Save"
+        android:textColor="@color/color_179E7C"
+        android:fontFamily="@font/kanit_regular"
+        android:paddingHorizontal="@dimen/_40sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:background="@drawable/bg_logout"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

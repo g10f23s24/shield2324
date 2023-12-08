@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Face ID"
+        android:fontFamily="@font/kanit_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:padding="@dimen/_12sdp"
+        android:gravity="center_horizontal"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imBack"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="@dimen/_12sdp"/>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camera"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="@+id/camera"
+        app:layout_constraintBottom_toBottomOf="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#BF373737">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintGuide_percent="0.05"
+            android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintGuide_percent="0.95"
+            android:orientation="vertical"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imBounds"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/start"
+            app:layout_constraintEnd_toEndOf="@+id/end"
+            app:layout_constraintDimensionRatio="h, 1:1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_camera_bounds"
+            android:tint="@color/white"/>
+
+        <com.trust.home.security.widgets.CircleHoleView
+            app:layout_constraintTop_toTopOf="@+id/imBounds"
+            app:layout_constraintBottom_toBottomOf="@+id/imBounds"
+            app:layout_constraintStart_toStartOf="@+id/imBounds"
+            app:layout_constraintEnd_toEndOf="@+id/imBounds"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

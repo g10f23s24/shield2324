@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:fontFamily="@font/kanit_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="@string/enter_your_username"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_11ssp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:background="@drawable/bg_username"/>
+</LinearLayout>

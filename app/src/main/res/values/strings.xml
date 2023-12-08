@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Home Security</string>
+    <string name="login_welcome">Welcome to Home Security,\nSign In to Continue.</string>
+    <string name="login_create_account">Don\'t have an account? Create a account\nIt takes less than a minute.</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login_with_google">Sign In with Google</string>
+    <string name="create_account">Create account</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="ok">Ok!</string>
+    <string name="close">Close</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+</resources>

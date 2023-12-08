@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:padding="@dimen/_6sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            tools:text="App toolbar"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/kanit_semi_bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imEnd"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:padding="@dimen/_5sdp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.36dp"
+        android:background="#A5A5A5"/>
+</LinearLayout>
